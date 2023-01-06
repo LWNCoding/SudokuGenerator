@@ -13,7 +13,7 @@ public class Board{
         board[a][b] = boardStore[a][b];
       }
     }
-    shuffle100();
+    shuffleRand();
     for(int a = 0; a < 9; a++){
       for(int b = 0; b < 9; b++){
         boardStore[a][b] = board[a][b];
@@ -114,8 +114,8 @@ public class Board{
   }
 
   //shuffles 100 times by calling the 4 methods above
-  public void shuffle100(){
-    for(int x = 0; x < 100; x++){
+  public void shuffleRand(){
+    for(int x = 0; x < ((int)(Math.random() * 100)) + 1; x++){
       shuffleBoard2Row();
       shuffleBoard2Col();
       shuffleBoard3Row();
