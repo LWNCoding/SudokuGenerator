@@ -1,7 +1,6 @@
 import java.util.Scanner;
 class Sudoku{
   public static void main(String[] args) {
-    //https://Sudoku.liamxc.repl.run if you dont want to save the files
     //Runs game, introduction and how to play. Then it prompts user what row, column, and number to place the number in. When the board is solved it will say congrats.
     Scanner scan = new Scanner(System.in);
     Board a1 = new Board();
